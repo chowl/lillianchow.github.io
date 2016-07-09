@@ -1,13 +1,22 @@
-
+/*<h1>
+	<font-face="ar bonnie">
+	<font-size="18">
+		Lillian Chow
+	</h1>
+		<p><center>
+	<font-face="calibri light">
+	<font-size="5">
+*/
 	
 	ul{
 		list-style-type:none;
 		margin:0;
+		/*margin-left:30%;*/
 		padding:0;
 		overflow:hidden;
 		background-color: #fff;
 	}
-	li{float: center;
+	li{float: left;
 	}
 	li a {
 		display: block;
@@ -25,28 +34,28 @@
 		display:inline;
 		list-style-type: none;
 		padding-right: 20px;
+		padding-bottom:5%;
 	}
 
-/*	##<ul>
-		<li><a href="default.html">ABOUT</a></li>
-		<li><a href="resume.html">RESUME</a></li>
-		<li><a href="organizations.html">ORGANIZATIONS</a></li>
-		<li><a href="projects.html">PROJECTS</a></li>
-	
-</ul>
-*/
 
-	div.picture1{
-		width:450;
-		height:300;
-		background-image:url(rachandlil.jpg);
-		margin:0;
-		padding:0;
-	}
-<div id="rachandlil" class="img">
-	<img class="bottom" src="rachandlil.jpg"/>
-	<img class="top" src="senior2.jpg"/>
-</div>
+
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+/*defining 4 keyframes and making them transparent or not*/
 
   @keyframes cf3FadeInOut {
   0% {
@@ -63,54 +72,44 @@ opacity:0;
 }
 }
 
-#cf3 img.top {
+#cf img.top {
 animation-name: cf3FadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
-animation-duration: 1s;
+animation-duration: 5s;
 animation-direction: alternate;
 }
 
 
-	/* 
-	<div class="fadeImg"><center>
-		<img src="mermaid.jpg" height = "300" width = "450">		<!-- sets images to import and to set size -->
-		<img style="display:none;"src="senior2.jpg" height="300" width="450">
-		<img style="display:none;"src="senior3.jpg" height="300" width="450">
-		<img style="display:none;"src="lizzandlil.jpg" height="300" width="450">
-		<img style="display:none;"src="rachandlil.jpg" height="300" width="250">
-		</div>
+/*@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
-	
-	<script type="text/javascript" src="js/package/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript">
-	$next = 1;			// fixed, please do not modfy;
-	$current = 0;		// fixed, please do not modfy;
-	$interval = 4000;	// You can set single picture show time;
-	$fadeTime = 800;	// You can set fadeing-transition time;
-	$imgNum = 5;		// How many pictures do you have
- 
-	$(document).ready(function(){
-		//NOTE : Div Wrapper should with css: relative;
-		//NOTE : img should with css: absolute;
-		//NOTE : img Width & Height can change by you;
-		$('.fadeImg').css('position','center');
-		$('.fadeImg img').css({'position':'center','width':'500px','height':'350px'});
- 
-		nextFadeIn();
-	});
- 
-	function nextFadeIn(){
-		//make image fade in and fade out at one time, without splash vsual;
-		$('.fadeImg img').eq($current).delay($interval).fadeOut($fadeTime)
-		.end().eq($next).delay($interval).hide().fadeIn($fadeTime, nextFadeIn);
-		    
-		// if You have 5 images, then (eq) range is 0~4 
-		// so we should reset to 0 when value > 4; 
-		if($next < $imgNum-1){ $next++; } else { $next = 0;}
-		if($current < $imgNum-1){ $current++; } else { $current =0; }
-	};
-</script> */
+#cf img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+#cf img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+#cf img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+#cf img:nth-of-type(4) {
+  animation-delay: 0;
+}*/
 
-	
 	
