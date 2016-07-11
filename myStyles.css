@@ -1,13 +1,4 @@
-/*<h1>
-	<font-face="ar bonnie">
-	<font-size="18">
-		Lillian Chow
-	</h1>
-		<p><center>
-	<font-face="calibri light">
-	<font-size="5">
-*/
-	
+
 	ul{
 		list-style-type:none;
 		margin:0;
@@ -80,36 +71,3 @@ animation-duration: 5s;
 animation-direction: alternate;
 }
 
-
-/*@keyframes cf4FadeInOut {
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-#cf img:nth-of-type(1) {
-  animation-delay: 6s;
-}
-#cf img:nth-of-type(2) {
-  animation-delay: 4s;
-}
-#cf img:nth-of-type(3) {
-  animation-delay: 2s;
-}
-#cf img:nth-of-type(4) {
-  animation-delay: 0;
-}*/
-
-	
