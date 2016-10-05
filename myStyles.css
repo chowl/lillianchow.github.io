@@ -22,7 +22,7 @@
 table{
 	display: table;
 	border-collapse: separate;
-	border-spacing: 2px;
+	border-spacing: 5%;
 	border-color: gray;
 }
 
@@ -39,13 +39,13 @@ table{
 
 #cf {
   position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
+  height:281px; 	/*281px*/
+  width:35%;	/*450px*/
+  margin:0% auto;
 }
 #cf img {
   position:absolute;
-  left:0;
+  left:0%;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
