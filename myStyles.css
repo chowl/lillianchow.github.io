@@ -1,0 +1,87 @@
+p{
+		font-family:"Arial","sans-serif";
+}
+	
+
+	ul{
+		list-style-type:none;
+		margin:0%;
+		/*margin-left:30%;*/
+		padding:0%;
+		overflow:hidden;
+		background-color: #fff;
+	}
+	li{float: left;
+	}
+	li a {
+		display: block;
+		color:black;
+		text-align:left;
+		padding:14px 16px; /*14px 16px*/
+		text-decoration:none;
+	}
+	li a:hover{
+		background-color:#bfbfbf;
+	}
+
+
+
+
+table{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 5%;
+	border-color: gray;
+}
+
+	#navlist li
+	{
+		display:inline;
+		list-style-type: none;
+		padding-right: 5%;
+		padding-bottom:5%;
+	}
+
+
+
+
+#cf {
+  position:relative;
+  height:281px; 	/*281px*/
+  width:35%;	/*450px*/
+  margin:0% auto;
+}
+#cf img {
+  position:absolute;
+  left:0%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+/*defining 4 keyframes and making them transparent or not*/
+
+  @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+
